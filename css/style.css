@@ -1,12 +1,21 @@
+header, footer{
+    background-color: antiquewhite;
+}
+
 body{
     width: 1100;
+    background-color: antiquewhite;
+}
+
+canvas{
+    background-color: azure;
 }
 
 div {
     border: black 1px solid;
     /* float: left; */
     display: inline-block;
-    width: 400px;
+    /* width: 400px; */
     margin: 10;
     padding:10;
 }
@@ -22,7 +31,7 @@ div {
 #headerLogo {
     /* float: left; */
     display: inline-block;
-    width: 50px;
+    /* width: 50px; */
 }
 div #descriptionBox, section{
     text-align: center;
@@ -48,4 +57,7 @@ div #rank{
 }
 h2{
     text-align: center;
+}
+div #rank{
+    display: inline-block;
 }
