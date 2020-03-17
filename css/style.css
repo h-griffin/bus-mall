@@ -17,10 +17,11 @@ div {
 }
 
 #headerLogo {
-    float: left;
+    /* float: left; */
     display: inline-block;
 }
 div #descriptionBox{
     text-align: center;
     width:700px;
 }
+
