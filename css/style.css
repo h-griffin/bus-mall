@@ -1,0 +1,26 @@
+div {
+    border: black 1px solid;
+    float: left;
+    margin: 10;
+    padding:10;
+}
+
+#results{
+    display: inline-block;
+    border: black 1px solid;
+    height: 500px;
+    width: 200px;
+}
+
+#rightside, #descriptionBox{
+    display: inline;
+}
+
+#headerLogo {
+    float: left;
+    display: inline-block;
+}
+div #descriptionBox{
+    text-align: center;
+    width:700px;
+}
