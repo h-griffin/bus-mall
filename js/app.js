@@ -45,7 +45,7 @@ function generateRandomImage(){
     while(
         allImages[index].name === image1.name ||
         allImages[index].name === image2.name ||
-        allImages[index].nae === image3.name
+        allImages[index].name === image3.name
     ){
         index = Math.floor(Math.random()* allImages.length);
     }
@@ -62,7 +62,7 @@ function renderImages(){
 
     var newImage2 = generateRandomImage();
     image2.src = newImage2.imagePath;
-    image2.nae = newimage2.name;
+    image2.name = newImage2.name;
     newImage2.timesRendered++;
     voteRounds = voteRounds++;
 
@@ -105,7 +105,6 @@ function clickHandler(event){
         }
     }
     renderImages();
-}
 
 image1.addEventListener('click', clickHandler);
 image2.addEventListener('click', clickHandler);
