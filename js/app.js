@@ -15,7 +15,7 @@ function VoteImage(name, imagePath) {
 //create objects
 new VoteImage('Bag', 'img/bag.jpg');
 new VoteImage('Banana', 'img/banana.jpg');
-new VoteImage('Bathroom', 'img.bathroom.jpg');
+new VoteImage('Bathroom', 'img/bathroom.jpg');
 new VoteImage('Boots', 'img/boots.jpg');
 new VoteImage('Breakfast', 'img/breakfast.jpg');
 new VoteImage('Bubblegum', 'img/bubblegum.jpg');
@@ -58,19 +58,19 @@ function renderImages(){
     image1.src = newImage1.imagePath;
     image1.name = newImage1.name;
     newImage1.timesRendered++;
-    voteRounds = voteRounds++;
+    // voteRounds = voteRounds++;
 
     var newImage2 = generateRandomImage();
     image2.src = newImage2.imagePath;
     image2.name = newImage2.name;
     newImage2.timesRendered++;
-    voteRounds = voteRounds++;
+    // voteRounds = voteRounds++;
 
     var newImage3 = generateRandomImage();
     image3.src = newImage3.imagePath;
     image3.name = newImage3.name;
     newImage3.timesRendered++;
-    voteRounds = voteRounds++;
+    // voteRounds = voteRounds++;
 }
 renderImages();
 
@@ -89,22 +89,28 @@ function renderResults(){
 //null same as '' 
 //check how many times voted then render new images
 function clickHandler(event){
-    var lsitEl = document.getElementById('ranking');
-    listEl.innerHtml = '';
+    voteRounds++;
+    var listEl = document.getElementById('ranking');
+    listEl.innerHTML = '';
 
-    for(var i = 0; i < allImages.length; i++);
+    for(var i = 0; i < allImages.length; i++){
 
         if(allImages[i].name === event.target.name){
             allImages[i].numClicked++;
-            voteRounds++;
+            // voteRounds++;
+            renderImages();
         }if (voteRounds === 25){
+            image1.removeEventListener('click', clickHandler);
+            image2.removeEventListener('click', clickHandler);
+            image3.removeEventListener('click', clickHandler);
             event = false;
             alert('Thanks for Voting! heres the final results!');
             renderResults();
             break;
         }
     }
-    renderImages();
+}
+// renderImages();
 
 image1.addEventListener('click', clickHandler);
 image2.addEventListener('click', clickHandler);
