@@ -12,7 +12,6 @@ function VoteImage(name, imagePath) {
     allImages.push(this);
 }
 
-
 //create objects
 new VoteImage('Bag', 'img/bag.jpg');
 new VoteImage('Banana', 'img/banana.jpg');
@@ -33,7 +32,6 @@ new VoteImage('Unicorn', 'img/unicorn.jpg');
 new VoteImage('Usb', 'img/usb.gif');
 new VoteImage('Water-can', 'img/water-can.jpg');
 new VoteImage('Wine-glass', 'img/wine-glass.jpg');
-
 
 var ctx = document.getElementById('myChart').getContext('2d');
 var clickChart = new Chart(ctx, {
@@ -171,7 +169,6 @@ function takeOutData(){
 }
 console.log(localStorage.allImages);
 console.log(allImages);
-
 
 //grab image spot from html and fill/insert to html
 var image1 = document.getElementById('img1');
