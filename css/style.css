@@ -33,6 +33,7 @@ h1{
     font-size: xx-large;
 
 }
+
 /* result list */
 #results{
     /* float: left; */
@@ -60,6 +61,7 @@ h1{
     /* margin-left: 210px; */
 }
 
+/* click to vote */
 h2{
     text-align: center;
     border: solid black thin;
@@ -95,6 +97,7 @@ section div{
     height: 40%;
     display: inline-block;
 }
+
 #descriptionBox p{
     vertical-align: bottom;
     font-family: monospace;
@@ -106,9 +109,4 @@ canvas{
     border: solid black thin;
     background-color: azure;
     width: 100%;
-}
-
-h2{
-    text-align: center;
-    border: solid black thin;
 }

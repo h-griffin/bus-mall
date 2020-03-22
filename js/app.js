@@ -33,6 +33,7 @@ new VoteImage('Usb', 'img/usb.gif');
 new VoteImage('Water-can', 'img/water-can.jpg');
 new VoteImage('Wine-glass', 'img/wine-glass.jpg');
 
+//print chart
 var ctx = document.getElementById('myChart').getContext('2d');
 var clickChart = new Chart(ctx, {
   type: 'bar',
