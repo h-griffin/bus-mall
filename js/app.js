@@ -150,7 +150,7 @@ function renderChartData(){
     clickChart.data.datasets[1].data.push(allImages[i].timesRendered);
 
     //add to local storeage for later /set item
-    localStorage.setItem("allItems", JSON.stringify(allImages));
+    localStorage.setItem("allImages", JSON.stringify(allImages));
     }
 }
 console.log(localStorage.allImages);
@@ -251,6 +251,7 @@ function clickHandler(event){
 
             renderChartData();// not defined /console
             clickChart.update();
+            
             break;
           }
         }
@@ -279,3 +280,4 @@ function refreshClicks() {
   } 
 }
 refreshClicks();
+

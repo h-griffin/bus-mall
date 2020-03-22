@@ -1,31 +1,22 @@
-header, footer{
-    background-color: antiquewhite;
+/* all */
+*{
+    border: solid black thin;
 }
 
 body{
-    width: 1100;
+    border: solid black thin;
+    width: 1100px;
     background-color: antiquewhite;
+    margin: 0px auto;
 }
 
-canvas{
-    background-color: azure;
-}
+/* header */
+header, footer{
+    border: solid black thin;
+    width: 1100px;
+    background-color: antiquewhite;
+    margin: 0px auto;
 
-div {
-    border: black 1px solid;
-    /* float: left; */
-    display: inline-block;
-    /* width: 400px; */
-    margin: 10;
-    padding:10;
-}
-
-#results{
-    /* float: left; */
-    display: inline-block;
-    border: black 1px solid;
-    height: 500px;
-    width: 200px;
 }
 
 #headerLogo {
@@ -33,31 +24,91 @@ div {
     display: inline-block;
     /* width: 50px; */
 }
-div #descriptionBox, section{
-    text-align: center;
-    width:720px;
+
+#headerText {
     display: inline-block;
 }
 
-/* #rightside img {
-    height: 250px;
-    width: 240px;
-} */
+h1{
+    font-size: xx-large;
 
-div #img1, #img2, #img3 {
-    height:250px;
-    width: 240px;
+}
+/* result list */
+#results{
+    /* float: left; */
     display: inline-block;
+    border: solid black thin;
+    height: 500px;
+    width: 200px;
 }
 
-div #rank{
+#rank{
     height: 600px;
     width: 200px;
     display: inline-block;
+    border: solid black thin;
+    vertical-align: top;
+    font-family: monospace;
 }
+
+/* big box with pictures and words */
+#pictureWords{
+    border: solid black thin;
+    display: inline-block;
+    width: 730px;
+    height: 600px;
+    /* margin-left: 210px; */
+}
+
 h2{
     text-align: center;
+    border: solid black thin;
+    font-family: monospace;
+    font-size: larger;
 }
-div #rank{
+
+/* imgages */
+section div{
+    border: solid black thin;
     display: inline-block;
+    width: 260px;
+    height:250px; 
+    margin-left: 25px;
+}
+
+#pictureWords{
+    width: 880px;
+    display: inline-block;
+}
+
+#img1, #img2, #img3 {
+    height:250px;
+    width: 240px;
+    display: inline-block;
+    border: solid black thin;
+}
+
+#descriptionBox{
+    border: solid black thin;
+    text-align: center;
+    width: 100%;
+    height: 40%;
+    display: inline-block;
+}
+#descriptionBox p{
+    vertical-align: bottom;
+    font-family: monospace;
+    font-size: large;
+}
+
+/* chart */
+canvas{
+    border: solid black thin;
+    background-color: azure;
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    border: solid black thin;
 }
